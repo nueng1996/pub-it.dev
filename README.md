@@ -1,5 +1,5 @@
 # pub-it.dev
-This is tiny project for showcase implement microservice (and For my own learning).
+This is tiny project for showcase implement microservice (and For my own learning microservice topic).
 
 Pub-it.dev project is not greate code for use in production, i don't use design patterns for this project (I focus on getting it to work.)
 
