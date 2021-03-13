@@ -1,0 +1,24 @@
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-service
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/use-regex: 'true'
+spec:
+  rules:
+    - host: pub-it.dev
+      http:
+        paths:
+          - path: /api/[A-Z]
+            backend:
+              serviceName: publish-clusterip-srv
+              servicePort: 3001
+          - path: /apiv1/[A-Z]
+            backend:
+              serviceName: check-clusterip-srv
+              servicePort: 3002
+          - path: /
+            backend:
+              serviceName: client-clusterip-srv
+              servicePort: 3000

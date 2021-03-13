@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: publish-dpl
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: publish
+  template:
+    metadata:
+      labels:
+        app: publish
+    spec:
+      containers:
+        - name: publish
+          image: nueng1996/publish
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: publish-clusterip-srv
+spec:
+  selector:
+    app: publish
+  ports:
+    - name: publish
+      protocol: TCP
+      port: 3001
+      targetPort: 3001

@@ -1,0 +1,50 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      # - ./k8s/*
+      - ./k8s/nats-dpl.yaml
+      - ./k8s/publish-dpl.yaml
+      - ./k8s/ingress-srv.yaml
+      - ./k8s/check-dpl.yaml
+      - ./k8s/client-dpl.yaml
+      - ./k8s/exp-redis-dpl.yaml
+      - ./k8s/exp-dpl.yaml
+
+build:
+  local:
+    push: false
+  artifacts:
+    - image: nueng1996/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .
+    - image: nueng1996/check
+      context: check
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .
+    - image: nueng1996/exp
+      context: exp
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .
+    - image: nueng1996/publish
+      context: publish
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .
