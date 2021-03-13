@@ -1,5 +1,5 @@
 # pub-it.dev
-This is tiny project for show case implement microservice.
+This is tiny project for showcase implement microservice (and For my own learning).
 
 Pub-it.dev project is not greate code for use in production, i don't use design patterns for this project (I focus on getting it to work.)
 
@@ -16,6 +16,7 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
   * publish:open
   * publish:close
   * check:banned
- 
+
+After this line i will use thai language for explain how is work and architure of pub-it.dev. for who lost in this repository and don't understand thai don't worry in future i plan translate for englist.
  
  
