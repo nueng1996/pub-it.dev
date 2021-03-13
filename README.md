@@ -7,7 +7,6 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
 
 [Wiki link](https://github.com/nueng1996/pub-it.dev/wiki/Home-Thai)
 
-
 # Architecture:
   * fronend[client] use react
   * backend use node js
@@ -25,8 +24,6 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
   * publish:open
   * publish:close
   * check:banned
-
-
 
  
  
