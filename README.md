@@ -21,9 +21,8 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
   * publish:close
   * check:banned
 
-After this line i will use thai language for explain how is work and architure of pub-it.dev. for who lost in this repository and don't understand thai don't worry in future i plan add englist session.
+> In wiki of this project  i will use thai language for explain how is work and architure of pub-it.dev. for who lost come in this repository and don't understand thai don't worry in future i plan add englist wiki.
 
-โปรเจคนี้ผมได้ทำการพัฒนาทั้งหมดโดยใช้ kubernetes ในการ Deploy แต่ลงใน minikube สำหรับการทำงานนั้นเมื่อเปิด pub-it.dev จะช่องให้กรองประกาศที่ต้องการโพส ด้วยสามารถตั้งเวลาปิดประกาศได้
 
  
  
