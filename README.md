@@ -3,6 +3,8 @@ This is tiny project for showcase implement microservice (and For my own learnin
 
 Pub-it.dev project is not greate code for use in production, i don't use design patterns for this project (I focus on getting it to work.)
 
+> In wiki of this project  i will use thai language for explain how is work and architure of pub-it.dev. for who lost come in this repository and don't understand thai don't worry in future i plan add englist wiki.
+
 # Architure:
   * fronend[client] use react
   * backend use node js
@@ -21,7 +23,7 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
   * publish:close
   * check:banned
 
-> In wiki of this project  i will use thai language for explain how is work and architure of pub-it.dev. for who lost come in this repository and don't understand thai don't worry in future i plan add englist wiki.
+
 
 
  
