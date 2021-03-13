@@ -5,6 +5,9 @@ Pub-it.dev project is not greate code for use in production, i don't use design 
 
 > In wiki of this project  i will use thai language for explain how is work and architure of pub-it.dev. for who lost come in this repository and don't understand thai don't worry in future i plan add englist wiki.
 
+[Wiki link](https://github.com/nueng1996/pub-it.dev/wiki/Home-Thai)
+
+
 # Architure:
   * fronend[client] use react
   * backend use node js
